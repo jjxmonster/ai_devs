@@ -23,7 +23,7 @@ if (!indexed) {
 }
 
 const collectionInfo = await qdrant.getCollection(COLLECTION_NAME);
-
+console.log(collectionInfo);
 if (!collectionInfo) {
 	let documents: any[] = [];
 
